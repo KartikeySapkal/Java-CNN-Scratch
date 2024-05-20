@@ -1,25 +1,34 @@
-# Convolutional Neural Network Tutorial
-Hi! Thanks for checking out my tutorial where I walk you through the process of coding a convolutional neural network in java from scratch. After building a network for a university assignment, I decided to create a tutorial to (hopefully) help others do the same and improve my own understanding of neural networks. 
+# Neural Network for MNIST Digit Recognition
 
-**To run this code, please download the CSV mnist data and replace the filepath variables in the main function to match your CSV directory.**
+This project implements a neural network for recognizing handwritten digits from the MNIST dataset using Java.
 
-Link to the first video in the series on youtube:
-https://youtu.be/3MMonOWGe0M
+## Overview
 
-My github repository:
-https://github.com/evarae/CNN_Tutorial
+The MNIST dataset is a collection of 28x28 pixel grayscale images of handwritten digits (0-9). The goal of this project is to train a neural network model to accurately classify these digits.
 
-CSV MNIST Download:
-https://pjreddie.com/projects/mnist-in-csv/
+The neural network architecture consists of convolutional layers followed by max-pooling layers and fully connected layers.
 
-### Recommended Reading/Resources that I Used:
+## Features
 
-3Blue1Brown - *Neural Networks* -  https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+- Load the MNIST dataset
+- Train a neural network model
+- Test the trained model on a separate test set
+- Classify a single example from the test set
 
-Giuseppe Pio Cannata - *“Backpropagation in Fully Convolutional Networks (FCNs)”* - https://towardsdatascience.com/backpropagation-in-fully-convolutional-networks-fcns-1a13b75fb56a
+## Prerequisites
 
-Sumit Saha - *“A Comprehensive Guide to Convolutional Neural Networks — the ELI5 way”* - https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53
+- Java Development Kit (JDK) 8 or higher
 
-Pavithra Solai - *“Convolutions and Backpropagations”* - https://pavisj.medium.com/convolutions-and-backpropagations-46026a8f5d2c
+  ## File Structure
 
-Paul-Louis Pröve - *“An Introduction to different Types of Convolutions in Deep Learning”* - https://towardsdatascience.com/types-of-convolutions-in-deep-learning-717013397f4d
+├── data/ # Directory for dataset files
+│ ├── mnist_test.csv # Test set of MNIST dataset
+│ └── mnist_train.csv # Training set of MNIST dataset
+├── network/ # Package containing neural network classes
+│ ├── NetworkBuilder.java # Builder class for constructing neural networks
+│ └── NeuralNetwork.java # Class representing the neural network
+├── data/ # Directory for dataset files
+│ ├── DataReader.java # Class for reading MNIST dataset
+│ └── Image.java # Class representing an image in the dataset
+└── Main.java # Main class for running the program
+
