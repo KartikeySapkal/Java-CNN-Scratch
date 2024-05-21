@@ -8,6 +8,8 @@ import layers.MaxPoolLayer;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class NetworkBuilder {
 
     private NeuralNetwork net;

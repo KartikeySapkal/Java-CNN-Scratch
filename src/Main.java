@@ -9,20 +9,17 @@ import java.util.List;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
 import static java.util.Collections.shuffle;
 
 public class Main {
-
     public static void main(String[] args) {
-
         long SEED = 123;
-
         System.out.println("Starting data loading...");
-
         List<Image> imagesTest = new DataReader().readData("data/mnist_test.csv");
         List<Image> imagesTrain = new DataReader().readData("data/mnist_train.csv");
-
         System.out.println("Images Train size: " + imagesTrain.size());
         System.out.println("Images Test size: " + imagesTest.size());
 
@@ -35,10 +32,12 @@ public class Main {
 
         float rate = net.test(imagesTest);
         System.out.println("Pre-training success rate: " + rate);
+        Scanner scanner = new Scanner(System.in);
 
-        int epochs = 1;
 
-        for (int i = 0; i < epochs; i++) {
+        System.out.println("Enter No of Epochs(Recommended Epochs: 3) : ");
+        int ep = scanner.nextInt();
+        for (int i = 0; i < ep; i++) {
             shuffle(imagesTrain);
             try (ProgressBar pb = new ProgressBar("Training Epoch " + (i + 1), imagesTrain.size())) {
                 for (Image image : imagesTrain) {
@@ -49,13 +48,13 @@ public class Main {
             rate = net.test(imagesTest);
             System.out.println("Success rate after epoch " + i + ": " + rate);
 
-
-            testSingleExample(net, imagesTest.get(0));
         }
 
-
+        for(int i=0; i<10; i++){
+            testSingleExample(net, imagesTest.get(i));
+        }
     }
-    
+
     public static void testSingleExample(NeuralNetwork neuralNetwork, Image example) {
         System.out.println("Classifying a single example...");
         int predictedLabel = neuralNetwork.guess(example);
@@ -65,15 +64,49 @@ public class Main {
 
 }
 
-//Starting data loading...
-//Images Train size: 60000
-//Images Test size: 10000
-//Pre-training success rate: 0.0739
-//Training Epoch 1 100% │███████████████│ 60000/60000 (0:01:45 / 0:00:00)
-//Success rate after epoch 0: 0.8616
-//Classifying a single example...
-//Predicted label: 7
-//True label: 7
 
+/*
 
+Starting data loading...
+Images Train size: 60000
+Images Test size: 10000
+Pre-training success rate: 0.0739
+Training Epoch 1 100% │███████████████│ 60000/60000 (0:02:51 / 0:00:00)
+Success rate after epoch 0: 0.8638
+Training Epoch 2 100% │███████████████│ 60000/60000 (0:02:49 / 0:00:00)
+Success rate after epoch 1: 0.8939
+Training Epoch 3 100% │███████████████│ 60000/60000 (0:03:32 / 0:00:00)
+Success rate after epoch 2: 0.907
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 2
+True label: 2
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 0
+True label: 0
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 9
+True label: 9
+    Classifying a single example...
+    Predicted label: 9
+    True label: 5
+
+Classifying a single example...
+Predicted label: 9
+True label: 9
+*/
 
