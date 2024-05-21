@@ -1,25 +1,72 @@
-# Convolutional Neural Network Tutorial
-Hi! Thanks for checking out my tutorial where I walk you through the process of coding a convolutional neural network in java from scratch. After building a network for a university assignment, I decided to create a tutorial to (hopefully) help others do the same and improve my own understanding of neural networks. 
+<h1>1. Project Overview:</h1>
 
-**To run this code, please download the CSV mnist data and replace the filepath variables in the main function to match your CSV directory.**
+    Objective: Build a neural network for MNIST digit recognition using deep learning techniques.
+    Demonstration of Expertise: Showcase proficiency in designing, implementing, and training neural networks for image classification tasks, which are fundamental skills in deep learning.
 
-Link to the first video in the series on youtube:
-https://youtu.be/3MMonOWGe0M
+<h2>2. Project Structure:</h2>
 
-My github repository:
-https://github.com/evarae/CNN_Tutorial
+    Main Components:
+        Neural Network Implementation: Contains the code for constructing and training the neural network.
+        Data Handling: Includes classes for reading and preprocessing the MNIST dataset.
+        Main Class: Entry point for running the program and executing training/testing procedures.
+    File Structure:
 
-CSV MNIST Download:
-https://pjreddie.com/projects/mnist-in-csv/
+    bash
 
-### Recommended Reading/Resources that I Used:
+    ├── data/                   # Directory for dataset files
+    │   ├── mnist_test.csv      # Test set of MNIST dataset
+    │   └── mnist_train.csv     # Training set of MNIST dataset
+    ├── network/                # Package containing neural network classes
+    │   ├── NetworkBuilder.java # Builder class for constructing neural networks
+    │   └── NeuralNetwork.java  # Class representing the neural network
+    ├── data/                   # Directory for dataset files
+    │   ├── DataReader.java     # Class for reading MNIST dataset
+    │   └── Image.java          # Class representing an image in the dataset
+    └── Main.java               # Main class for running the program
 
-3Blue1Brown - *Neural Networks* -  https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+<h2>3. Detailed Explanation of Components:</h2>
 
-Giuseppe Pio Cannata - *“Backpropagation in Fully Convolutional Networks (FCNs)”* - https://towardsdatascience.com/backpropagation-in-fully-convolutional-networks-fcns-1a13b75fb56a
+    Neural Network Implementation:
+        NetworkBuilder: Constructs neural network architecture with specified layers and parameters.
+        NeuralNetwork: Implements forward and backward propagation, training, and testing procedures.
+    Data Handling:
+        DataReader: Reads MNIST dataset files and converts them into a format suitable for training/testing.
+        Image: Represents individual images in the dataset, including pixel data and label information.
+    Main Class:
+        Main: Entry point for the program, orchestrates data loading, model training/testing, and evaluation.
 
-Sumit Saha - *“A Comprehensive Guide to Convolutional Neural Networks — the ELI5 way”* - https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53
+<h2>4. Mathematical Models:</h2>
 
-Pavithra Solai - *“Convolutions and Backpropagations”* - https://pavisj.medium.com/convolutions-and-backpropagations-46026a8f5d2c
+    Input Layer:
+        Represents input data as a vector of pixel intensities.
+        No mathematical model required beyond input vector representation.
+    Convolutional Layer:
+        Applies convolution operations using learnable filters to extract features.
+        Computes dot products between filters and local regions of the input feature map.
+    Pooling Layer:
+        Downsamples feature maps by selecting maximum values from local regions (max pooling).
+    Fully Connected Layer:
+        Connects every neuron from the previous layer to every neuron in the current layer.
+        Computes weighted sums of input features followed by an activation function.
 
-Paul-Louis Pröve - *“An Introduction to different Types of Convolutions in Deep Learning”* - https://towardsdatascience.com/types-of-convolutions-in-deep-learning-717013397f4d
+<h2>5. Data Information:</h2>
+
+    MNIST Dataset:
+        A classic benchmark dataset for handwritten digit recognition.
+        Contains 28x28 pixel grayscale images of digits (0-9), split into training and test sets.
+        Training set: 60,000 images, Test set: 10,000 images.
+
+<h2>6. Expertise in Deep Learning:</h2>
+
+    Neural Network Architecture Design:
+        Expertise in designing neural network architectures tailored to specific tasks, such as image classification.
+    Implementation Skills:
+        Demonstrated ability to implement complex deep learning models using programming languages like Java.
+    Data Handling and Preprocessing:
+        Proficiency in handling and preprocessing datasets to prepare them for training/testing.
+    Training and Evaluation:
+        Skills in training neural networks, optimizing model performance, and evaluating classification accuracy.
+
+
+
+   
