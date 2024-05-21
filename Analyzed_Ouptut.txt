@@ -1,0 +1,350 @@
+
+Starting data loading...
+Images Train size: 60000
+Images Test size: 10000
+Pre-training success rate: 0.0739
+Enter No of Epochs(Recommended Epochs: 3) :
+3
+Training Epoch 1 100% │███████████████│ 60000/60000 (0:02:53 / 0:00:00)
+Success rate after epoch 0: 0.8661
+Training Epoch 2 100% │███████████████│ 60000/60000 (0:02:51 / 0:00:00)
+Success rate after epoch 1: 0.8939
+Training Epoch 3 100% │███████████████│ 60000/60000 (0:02:51 / 0:00:00)
+Success rate after epoch 2: 0.9073
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 2
+True label: 2
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 0
+True label: 0
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 8
+True label: 9
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 9
+True label: 5
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 9
+True label: 9
+Classifying a single example...
+Predicted label: 0
+True label: 0
+Classifying a single example...
+Predicted label: 6
+True label: 6
+Classifying a single example...
+Predicted label: 9
+True label: 9
+Classifying a single example...
+Predicted label: 0
+True label: 0
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 5
+True label: 5
+Classifying a single example...
+Predicted label: 9
+True label: 9
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 9
+True label: 9
+Classifying a single example...
+Predicted label: 6
+True label: 6
+Classifying a single example...
+Predicted label: 6
+True label: 6
+Classifying a single example...
+Predicted label: 5
+True label: 5
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 0
+True label: 0
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 0
+True label: 0
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 0
+True label: 4
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 2
+True label: 2
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 2
+True label: 2
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 6
+True label: 2
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 5
+True label: 5
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 2
+True label: 2
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 6
+True label: 6
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 5
+True label: 5
+Classifying a single example...
+Predicted label: 5
+True label: 5
+Classifying a single example...
+Predicted label: 6
+True label: 6
+Classifying a single example...
+Predicted label: 0
+True label: 0
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 9
+True label: 9
+Classifying a single example...
+Predicted label: 5
+True label: 5
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 8
+True label: 8
+Classifying a single example...
+Predicted label: 8
+True label: 9
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 3
+True label: 7
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 6
+True label: 6
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 0
+True label: 0
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 0
+True label: 0
+Classifying a single example...
+Predicted label: 2
+True label: 2
+Classifying a single example...
+Predicted label: 8
+True label: 9
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 7
+True label: 2
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 9
+True label: 9
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 6
+True label: 6
+Classifying a single example...
+Predicted label: 2
+True label: 2
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 9
+True label: 8
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 7
+True label: 7
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 6
+True label: 6
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 6
+True label: 6
+Classifying a single example...
+Predicted label: 9
+True label: 9
+Classifying a single example...
+Predicted label: 3
+True label: 3
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 4
+True label: 4
+Classifying a single example...
+Predicted label: 1
+True label: 1
+Classifying a single example...
+Predicted label: 3
+True label: 7
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 0
+True label: 6
+---------------
+Prediction failed
+------------------
+Classifying a single example...
+Predicted label: 9
+True label: 9
+
+
+
+-------------Training completed: 89----------------

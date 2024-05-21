@@ -49,18 +49,29 @@ public class Main {
             System.out.println("Success rate after epoch " + i + ": " + rate);
 
         }
-
-        for(int i=0; i<10; i++){
-            testSingleExample(net, imagesTest.get(i));
+        int count = 0;
+        for(int i=0; i<100; i++){
+           if(testSingleExample(net, imagesTest.get(i))){
+               count++;
+           }
         }
+
+        System.out.println("\n\n\n-------------Training completed: " + count + "----------------\n");
     }
 
-    public static void testSingleExample(NeuralNetwork neuralNetwork, Image example) {
+    public static boolean testSingleExample(NeuralNetwork neuralNetwork, Image example) {
         System.out.println("Classifying a single example...");
         int predictedLabel = neuralNetwork.guess(example);
         System.out.println("Predicted label: " + predictedLabel);
         System.out.println("True label: " + example.getLabel());
+        if(predictedLabel!=example.getLabel()){
+            System.out.println("---------------\nPrediction failed\n------------------");
+            return false;
+        }
+
+        return true;
     }
+
 
 }
 
