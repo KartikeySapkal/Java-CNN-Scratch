@@ -19,16 +19,25 @@ The neural network architecture consists of convolutional layers followed by max
 
 - Java Development Kit (JDK) 8 or higher
 
-  ## File Structure
+Project Structure
 
-├── data/ # Directory for dataset files
-│ ├── mnist_test.csv # Test set of MNIST dataset
-│ └── mnist_train.csv # Training set of MNIST dataset
-├── network/ # Package containing neural network classes
-│ ├── NetworkBuilder.java # Builder class for constructing neural networks
-│ └── NeuralNetwork.java # Class representing the neural network
-├── data/ # Directory for dataset files
-│ ├── DataReader.java # Class for reading MNIST dataset
-│ └── Image.java # Class representing an image in the dataset
-└── Main.java # Main class for running the program
+plaintext
+
+├── data
+│   ├── mnist_test.csv
+│   └── mnist_train.csv
+├── src
+│   ├── data
+│   │   ├── DataReader.java
+│   │   └── Image.java
+│   ├── layers
+│   │   ├── ConvolutionLayer.java
+│   │   ├── FullyConnectedLayer.java
+│   │   ├── Layer.java
+│   │   └── MaxPoolLayer.java
+│   ├── network
+│   │   ├── NetworkBuilder.java
+│   │   └── NeuralNetwork.java
+│   └── Main.java
+└── README.md
 
