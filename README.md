@@ -9,21 +9,23 @@
         Neural Network Implementation: Contains the code for constructing and training the neural network.
         Data Handling: Includes classes for reading and preprocessing the MNIST dataset.
         Main Class: Entry point for running the program and executing training/testing procedures.
-    File Structure:
-
-    bash
-
-    ├── data/                   # Directory for dataset files
-    │   ├── mnist_test.csv      # Test set of MNIST dataset
-    │   └── mnist_train.csv     # Training set of MNIST dataset
-    ├── network/                # Package containing neural network classes
-    │   ├── NetworkBuilder.java # Builder class for constructing neural networks
-    │   └── NeuralNetwork.java  # Class representing the neural network
-    ├── data/                   # Directory for dataset files
-    │   ├── DataReader.java     # Class for reading MNIST dataset
-    │   └── Image.java          # Class representing an image in the dataset
-    └── Main.java               # Main class for running the program
-
+├── data
+│   ├── mnist_test.csv
+│   └── mnist_train.csv
+├── src
+│   ├── data
+│   │   ├── DataReader.java
+│   │   └── Image.java
+│   ├── layers
+│   │   ├── ConvolutionLayer.java
+│   │   ├── FullyConnectedLayer.java
+│   │   ├── Layer.java
+│   │   └── MaxPoolLayer.java
+│   ├── network
+│   │   ├── NetworkBuilder.java
+│   │   └── NeuralNetwork.java
+│   └── Main.java
+└── README.md
 <h2>3. Detailed Explanation of Components:</h2>
 
     Neural Network Implementation:
